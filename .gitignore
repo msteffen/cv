@@ -1,0 +1,9 @@
+# Ignore vim temporary files
+[._]*.sw[a-p]
+
+# Ignore bazel symlink directories
+bazel-bin
+bazel-cv
+bazel-out
+bazel-testlogs
+
