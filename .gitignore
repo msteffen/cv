@@ -1,3 +1,6 @@
+# Ignore generated CV output
+cv.pdf
+
 # Ignore vim temporary files
 [._]*.sw[a-p]
 
