@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 set -ex
 
@@ -46,11 +46,6 @@ export PATH="/usr/local/texlive/2024/bin/x86_64-linux/:${PATH}"
 #   (see https://www.ctan.org/pkg/tabularx, "Contained in")
 # - 'latex' contains 'ifthen' and 'inputenc'.
 #   (it should always be present. It's a "required" latex package)
-# - This uses 'xargs' running three child processes to install these in parallel
-# - uses /bin/sh, which, by default, is 'dash' on ubuntu. While 'bash' only
-#   interprets C literals ('\n' below) inside of $'...' strings, dash
-#   interprets them as special characters everywhere, including inside '...'
-#   strings. So the below is sufficient (unless Ubuntu changes /bin/sh...)
 latex_pkgs=(
   geometry
   titlesec
@@ -70,8 +65,18 @@ latex_pkgs=(
   iftex
   moderncv
 )
-IFS=$'\n'
-echo "${latex_pkgs[*]}" | xargs -P3 -I{} tlmgr install '{}'
+if which vim; then
+  # For installing locally & use with vimtex
+  latex_pkgs+=( latexmk )
+fi
 
-# For installing locally & use with vimtex
-which vim && tlmgr install latexmk
+# This (old) approach used 'xargs' running three child processes to install
+# these in parallel. Unfortunately, this seems to crash intermittently. Leaving
+# it here in case I figure out how to fix it soon...
+# IFS=$'\n'
+# echo "${latex_pkgs[*]}" | xargs -P3 -I{} tlmgr install '{}'
+
+# Instead, just install the packages normally, for now
+# NB zsh will expand $latex_pkgs correctly below (parameter expansion is more
+#    sane than bash)
+tlmgr install $latex_pkgs
