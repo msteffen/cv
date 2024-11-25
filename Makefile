@@ -4,4 +4,4 @@ build-container:
 
 .PHONY: cv
 cv: build-container
-	docker run --rm -i pdflatex <cv.tex >cv.pdf
+	tar -cvzf - *.tex | docker run -i pdflatex cv.tex | tar -xvzf -
