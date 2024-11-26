@@ -6,256 +6,197 @@
 \input{setup.tex}
 
 \begin{document}
-    \newcommand{\AND}{\unskip
-        \cleaders\copy\ANDbox\hskip\wd\ANDbox
-        \ignorespaces
-    }
-    \newsavebox\ANDbox
-    \sbox\ANDbox{}
 
-    \placelastupdatedtext
-    \begin{header}
-        \textbf{\fontsize{24 pt}{24 pt}\selectfont John Doe}
+\newcommand{\AND}{\unskip
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
+}
 
-        \vspace{0.3 cm}
+\newsavebox\ANDbox
+\sbox\ANDbox{}
 
-        \normalsize
-        \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Your Location}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{mailto:youremail@yourdomain.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}youremail@yourdomain.com}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{tel:+90-541-999-99-99}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}0541 999 99 99}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://yourwebsite.com/}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}yourwebsite.com}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://linkedin.com/in/yourusername}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}yourusername}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://github.com/yourusername}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}yourusername}}%
-    \end{header}
+\placelastupdatedtext
 
+\begin{header}
+    \textbf{\fontsize{24 pt}{24 pt}\selectfont Matthew Steffen}
+
+    \normalsize
+    \textit{Leader with talents for communication and consensus-building. Experienced in engineering and management.}
+
+    \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}San Carlos, CA}
+    \kern 0.25 cm
+    \AND
+    \kern 0.25 cm
+    \mbox{\hrefWithoutArrow{mailto:m@tthew.io}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}m@tthew.io}}
+    \kern 0.25 cm
+    \AND
+    \kern 0.25 cm
+    \mbox{\hrefWithoutArrow{tel:+1-713-208-6899}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}713-208-6899}}
+    \kern 0.25 cm
+    \AND
+    \kern 0.25 cm
+    \mbox{\hrefWithoutArrow{https://prog.blog/}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}https://prog.blog}}
+    \kern 0.25 cm
+    \AND
+    \kern 0.25 cm
+    \mbox{\hrefWithoutArrow{https://linkedin.com/in/m12n}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}m12n}}
+    \kern 0.25 cm
+    \AND
+    \kern 0.25 cm
+    \mbox{\hrefWithoutArrow{https://github.com/msteffen}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}msteffen}}
+\end{header}
+
+\begin{comment}
     \vspace{0.3 cm - 0.3 cm}
-
-
     \section{Welcome to RenderCV!}
 
-
-
-        
-        \begin{onecolentry}
-            \href{https://rendercv.com}{RenderCV} is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{Markdown syntax support} and \textbf{complete control over the LaTeX code}.
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
-        \end{onecolentry}
-
-
-    
-    \section{Quick Guide}
-
     \begin{onecolentry}
-        \begin{highlightsforbulletentries}
-
-
-        \item Each section title is arbitrary and each section contains a list of entries.
-
-        \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-
-        \item Select a section title, pick an entry type, and start writing your section!
-
-        \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
-
-
-        \end{highlightsforbulletentries}
+        \href{https://rendercv.com}{RenderCV} is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{Markdown syntax support} and \textbf{complete control over the LaTeX code}.
     \end{onecolentry}
 
-    \section{Education}
+    \vspace{0.2 cm}
+    \begin{onecolentry}
+        The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
+    \end{onecolentry}
 
-
-
-        
-        \begin{twocolentry}{
-            
-            
-        \textit{Sept 2000 – May 2005}}
-            \textbf{University of Pennsylvania}
-
-            \textit{BS in Computer Science}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item GPA: 3.9/4.0 (\href{https://example.com}{a link to somewhere})
-                \item \textbf{Coursework:} Computer Architecture, Comparison of Learning Algorithms, Computational Theory
-            \end{highlights}
-        \end{onecolentry}
-
-
-
+    \section{Quick Guide}
     
-    \section{Experience}
+    \begin{onecolentry}
+        \begin{highlightsforbulletentries}
+        \item Each section title is arbitrary and each section contains a list of entries.
+        \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
+        \item Select a section title, pick an entry type, and start writing your section!
+        \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+\end{comment}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Experience                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
 
+%%%%%%%%%%%%%% HPE %%%%%%%%%%%%%%%%%%
+\begin{twocolentry}{
+    \textit{San Jose, CA}
 
-        
-        \begin{twocolentry}{
-        \textit{Cupertino, CA}    
-            
-        \textit{June 2005 – Aug 2007}}
-            \textbf{Software Engineer}
-            
-            \textit{Apple}
-        \end{twocolentry}
+    \textit{March 2023 – Nov 2024}
+}
+    \textbf{Hewlett Packard Enterprise}
 
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Reduced time to render user buddy lists by 75\% by implementing a prediction algorithm
-                \item Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts and provide metadata to a system-wide search database
-                \item Redesigned chat file format and implemented backward compatibility for search
-            \end{highlights}
-        \end{onecolentry}
+    \textit{Software Engineering Manager}
+\end{twocolentry}
 
+\vspace{0.10 cm}
 
-        \vspace{0.2 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item I was designated a Key Employee when Pachyderm was acquired by HPE in 2023.
+        \item I continued supporting the Pachyderm Integrations Team as its Engineering Manager through May 2024, hiring a frontend engineer and shipping a complete rewrite of our Jupyter extension to meet the security requirements of HPE's customers.
+        \item In June 2024, Pachyderm was reorganized into a single team with seven engineers and two managers. I stepped into the role of co-Engineering Manager for the new team, along with a colleague who was transitioning back to engineering.
+        \item I led several internal efficiency improvements, such as codifying our engineering standards and expectations in an engineering handbook and standardizing on a single common development environment, which I worked with IT to implement. This streamlined process allowed the team to ship several long-requested features.
+        \item I was laid off, along with most of the Pachyderm team, in Nov 2024.
+    \end{highlights}
+\end{onecolentry}
 
-        \begin{twocolentry}{
-        \textit{Redmond, WA}    
-            
-        \textit{June 2003 – Aug 2003}}
-            \textbf{Software Engineer Intern}
-            
-            \textit{Microsoft}
-        \end{twocolentry}
+\vspace{0.2 cm}
 
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Designed a UI for the VS open file switcher (Ctrl-Tab) and extended it to tool windows
-                \item Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
-                \item Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
-                \item Created a test case generation tool that creates random XML docs from XML Schema
-                \item Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
-            \end{highlights}
-        \end{onecolentry}
+%%%%%%%%%%%%%% Pachyderm %%%%%%%%%%%%%%%%%%
+\begin{twocolentry}{
+    \textit{San Francisco, CA}
 
+    \textit{Jan 2022 – Feb 2023}
+}
+    \textbf{Pachyderm}
 
+    \textit{Software Engineering Manager}
+\end{twocolentry}
 
-    
-    \section{Publications}
+\vspace{0.10 cm}
 
+\begin{onecolentry}
+    \begin{highlights}
+        \item In Jan 2022, I stepped into the role of Engineering Manager for our Integrations Team. I hired a backend engineer onto the team (a backfill) and supported the team through the design, development, and initial release of our JupyterLab extension.
+        \item This extension allowed data scientists to explore and consume Pachyderm data in a Jupyter notebook, and convert Jupyter notebooks into Pachyderm pipelines. Using it, they could develop Pachyderm pipelines interactively, which made the product much more accessible to new users, and made Pachyderm pipelines much easier to debug.
+    \end{highlights}
+\end{onecolentry}
 
+\vspace{0.2 cm}
 
-        
-        \begin{samepage}
-            \begin{twocolentry}{
-                Jan 2004
-            }
-                \textbf{3D Finite Element Analysis of No-Insulation Coils}
+\begin{twocolentry}{
+    \textit{Aug 2016 – Dec 2021}
+}
+    \textit{Software Engineer}
+\end{twocolentry}
 
-                \vspace{0.10 cm}
+\vspace{0.10 cm}
 
-                \mbox{Frodo Baggins}, \mbox{\textbf{\textit{John Doe}}}, \mbox{Samwise Gamgee}
-            \end{twocolentry}
+\begin{onecolentry}
+    \begin{highlights}
+        \item I implemented several major features (an authorization system and a complete rewrite of our pipeline controller, among others) as a core contributor.
+        \item In 2019, we created a new Integrations Team with the mandate of building integrations between Pachyderm and other AI/ML products. I was the first member of the team and acted as tech lead through its growth to five engineers. I wrote our first integration, with Kubeflow, and supported an overhaul of that initial Kubeflow integration as well as new integrations with AzureML, Sagemaker, Seldon, Spark, and MLFlow.
+    \end{highlights}
+  \end{onecolentry}
 
+\vspace{0.2 cm}
 
-            \vspace{0.10 cm}
+%%%%%%%%%%%%%% Google %%%%%%%%%%%%%%%%%%
+\begin{twocolentry}{
+    \textit{Mountain View, CA}
 
-            \begin{onecolentry}
-        \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
-            \end{onecolentry}
-        \end{samepage}
+    \textit{Aug 2011 – July 2016}
+}
+    \textbf{Google}
 
+    \textit{Software Engineer}
+\end{twocolentry}
 
-    
-    \section{Projects}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item I independently maintained a legacy authorization service used by Google Docs, Photos, YouTube, Search, and other products through 2012.
+        \item In 2013, I joined the \href{https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/}{Zanzibar} as the fourth engineer. I migrated products and internal infrastructure from the legacy service to Zanzibar and implemented features and performance improvements in Zanzibar itself.
+    \end{highlights}
+\end{onecolentry}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Education                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
 
+\begin{twocolentry}{
+    \textit{Sept 2007 – May 2011}
+}
+    \textbf{University of Chicago}
+\end{twocolentry}
 
-        
-        \begin{twocolentry}{
-            
-            
-        \textit{\href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}}}
-            \textbf{Multi-User Drawing Tool}
-        \end{twocolentry}
+% This should be in the twocolentry above, but it doesn't all fit in
+% the left column. Using a onecolentry here makes the spacing correct
+% but keeps everything on one line
+\begin{onecolentry}
+    \textit{BS in Computer Science (also met requirements for BS in Mathematics)}
+\end{onecolentry}
 
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-                \item Tools Used: C++, MFC
-            \end{highlights}
-        \end{onecolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item GPA: 3.8/4.0 (Dean's List 2007-2011)
+        \item ACM International Collegiate Programming Contest, World Finalist (2010, 2011)
+        \item USA Powerlifting Collegiate National Finalist (2011)
+    \end{highlights}
+\end{onecolentry}
 
+\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Skills                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
 
-        \vspace{0.2 cm}
+\begin{onecolentry}
+    \textbf{Engineering:} As a backend engineer, I have written a significant amount of C++, Java, and Go in a professional capacity. I've also done smaller projects in Typescript+React and Python.
 
-        \begin{twocolentry}{
-            
-            
-        \textit{\href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}}}
-            \textbf{Synchronized Desktop Calendar}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-                \item Tools Used: C\#, .NET, SQL, XML
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            
-            
-        \textit{2002}}
-            \textbf{Custom Operating System}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-                \item Tools Used: C
-            \end{highlights}
-        \end{onecolentry}
-
-
-
-    
-    \section{Technologies}
-
-
-
-        
-        \begin{onecolentry}
-            \textbf{Languages:} C++, C, Java, Objective-C, C\#, SQL, JavaScript
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            \textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
-        \end{onecolentry}
-
-
-    
+    \textbf{Management:} I have supported teams of up to five engineers and hired into frontend and full-stack roles. I have strong written and verbal communication skills and wrote many of Pachyderm's internal templates and guides.
+\end{onecolentry}
+\end{comment}
 
 \end{document}

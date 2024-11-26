@@ -11,14 +11,15 @@
 \usepackage{titlesec} % for customizing section titles
 \usepackage{tabularx} % for making tables with fixed width columns
 \usepackage{array} % tabularx requires this
+\usepackage{verbatim} % for \begin{comment}
 \usepackage[dvipsnames]{xcolor} % for coloring text
 \definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
 \usepackage{enumitem} % for customizing lists
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
 \usepackage[
-    pdftitle={John Doe's CV},
-    pdfauthor={John Doe},
+    pdftitle={Matthew Steffen's CV},
+    pdfauthor={Matthew Steffen},
     pdfcreator={LaTeX with RenderCV},
     colorlinks=true,
     urlcolor=primaryColor
@@ -32,6 +33,10 @@
 \usepackage{ifthen} % for conditional statements
 \usepackage{needspace} % for avoiding page brake right after the section title
 \usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+\usepackage{microtype} % to disable ligatures
+
+% My name has two 'f's, but it looks weird ligature-ized
+\DisableLigatures{encoding = *, family = * }
 
 % Ensure that generate pdf is machine readable/ATS parsable:
 \ifPDFTeX
@@ -52,7 +57,7 @@
 \makeatletter
 \let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
 \patchcmd{\ps@customFooterStyle}{\thepage}{
-    \color{gray}\textit{\small John Doe - Page \thepage{} of \pageref*{LastPage}}
+    \color{gray}\textit{\small Matthew Steffen - Page \thepage{} of \pageref*{LastPage}}
 }{}{} % replace number by desired string
 \makeatother
 \pagestyle{customFooterStyle}
@@ -95,7 +100,6 @@
     \end{itemize}
 } % new environment for highlights for bullet entries
 
-
 \newenvironment{onecolentry}{
     \begin{adjustwidth}{
         0.2 cm + 0.00001 cm
@@ -129,7 +133,7 @@
         \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+        \small\color{gray}\textit{Last updated in November 2024}\hspace{\widthof{Last updated in November 2024}}
     }}}%
   }%
 }%
