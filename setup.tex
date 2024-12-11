@@ -57,7 +57,17 @@
 \makeatletter
 \let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
 \patchcmd{\ps@customFooterStyle}{\thepage}{
-    \color{gray}\textit{\small Matthew Steffen - Page \thepage{} of \pageref*{LastPage}}
+    \ifthenelse{
+        % For some reason, \pageref*{LastPage} (what this template originally
+        % used for the footer) doesn't work on the LHS of this expression, but
+        % \getpagerefnumber{LastPage} does. Got the idea to try this from
+        % https://tex.stackexchange.com/a/492411/2533
+        \getpagerefnumber{LastPage} = 1
+    }{
+        % Empty - no "Page M of N" footer if ony one page
+    }{
+        \color{gray}\textit{\small Matthew Steffen - Page \thepage{} of \getpagerefnumber{LastPage}}
+    }
 }{}{} % replace number by desired string
 \makeatother
 \pagestyle{customFooterStyle}
