@@ -78,10 +78,9 @@
 
 \begin{onecolentry}
     \begin{highlights}
-        \item Designated a Key Employee when Pachyderm was acquired by HPE in 2023.
-        \item Continued managing the Pachyderm Integrations Team through May 2024, hiring a full-stack engineer and shipping a complete rewrite of our Jupyter extension to meet the security requirements of HPE's customers.
-        \item Co-managed a team of seven engineers, after Pachyderm was re-organized into this single team in June 2024.
-        \item Led several internal efficiency improvements, such as codifying our engineering standards and expectations in an engineering handbook and standardizing on a single common development environment, which I worked with IT to implement. This streamlined process helped the team ship several long-requested features.
+        \item I was designated a Key Employee when HPE acquired Pachyderm in 2023.
+        \item Continued managing the Pachyderm Integrations Team through May 2024, shipping a complete rewrite of our Jupyter extension to meet the security requirements of HPE's customers.
+        \item Co-managed a team of seven engineers, after HPE re-organized Pachyderm into this single team in June 2024. I entirely overhauled the team's processes and worked with IT to implement a common development environment. These efficiency improvements allowed us to ship several long-requested features.
     \end{highlights}
 \end{onecolentry}
 
@@ -131,8 +130,9 @@
 
 \begin{onecolentry}
     \begin{highlights}
-        \item Managed our Integrations Team starting in 2022, hiring a backend engineer onto the team (a backfill) and supported the team through the design, development, and initial release of our JupyterLab extension. I continued contributing to design reviews and going on call through my tenure as manager.
-        \item This extension allowed data scientists to explore and consume Pachyderm data in a Jupyter notebook, and convert Jupyter notebooks into Pachyderm pipelines. Using it, they could develop Pachyderm pipelines interactively, which made the product much more accessible to new users, and made Pachyderm pipelines much easier to debug.
+        \item Hired for and supported the team through the design and development of our JupyterLab extension.
+        \item This extension, our biggest project, was a developer tool that allowed data scientists to explore and consume Pachyderm data directly in a Jupyter notebook (which required deep modifications to Jupyter's frontend) and run Jupyter notebooks as sharded, orchestrated Pachyderm pipelines without modification.
+        \item Contributed to design reviews and stayed in our on-call rotation throughout my tenure as manager.
     \end{highlights}
 \end{onecolentry}
 
@@ -148,9 +148,9 @@
 
 \begin{onecolentry}
     \begin{highlights}
+        \item Pachyderm is a distributed filesystem with versioning that eliminates duplicate work in data pipelines and AI training. When a Pachyderm pipeline runs on a new version of its data, it only processes new and updated shards and re-uses previous results otherwise. In some cases, we reduced the cost of our customers' pipelines by over 90\%. We described ourselves as ``Git for data'' or, sometimes, ``Bazel for data''.
         \item Implemented several major features, including an authorization system and a complete rewrite of our pipeline controller, among others (Go).
-        \item Started new Integrations Team, to build integrations between Pachyderm and other AI/ML products. I acted as tech lead through its growth to five engineers.
-        \item Wrote our first integration, with Kubeflow, and supported an overhaul of that initial Kubeflow integration as well as new integrations with AzureML, Sagemaker, Seldon, Spark, and MLFlow.
+        \item Started new Integrations Team, to build integrations between Pachyderm and other AI/ML products (Kubeflow, Seldon, LabelStudio, AzureML, and others). I acted as tech lead through its growth to five engineers.
     \end{highlights}
   \end{onecolentry}
 
