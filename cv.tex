@@ -144,8 +144,8 @@
 
 \begin{onecolentry}
     \begin{highlights}
-        \item Pachyderm is a distributed filesystem with versioning, for data and AI pipelines. When a pipeline runs on Pachyderm data, our pipeline orchestrator uses versioning data to processes only new and updated shards. Results from unchanged shards are re-used, cutting the runtime and cost of our customers' pipelines by over 90\% in some cases. We described ourselves as ``Git for data'' or, sometimes, ``Bazel for data''.
-        \item Implemented several major features, including an authorization system and a complete rewrite of our pipeline controller, among others (Go).
+        \item Pachyderm is a distributed filesystem with versioning, for data and AI pipelines. When Pachyderm runs a pipeline, its pipeline orchestrator uses versioning metadata to processes only new and updated shards. Results from unchanged shards are re-used, cutting the runtime and cost of some pipelines by over 90\%. Sometimes described as ``Bazel for data''.
+        \item Implemented several major features, including an authorization system and a complete rewrite of our pipeline controller, among others (Go, Kubernetes).
         \item Started new Integrations Team, to connect Pachyderm and other AI/ML products (Kubeflow, Seldon, LabelStudio, AzureML, Spark, and others). I acted as tech lead through its growth to five engineers.
     \end{highlights}
   \end{onecolentry}
