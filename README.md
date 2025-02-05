@@ -1,4 +1,4 @@
-# Resumé (CV)
+# Résumé (CV)
 
 I had to call the repo "cv" to avoid ambiguity with the opposite of "pause".
 
