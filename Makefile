@@ -6,7 +6,7 @@ init-repo:
 
 .PHONY: build-container
 build-container:
-	DOCKER_BUILDKIT=1 docker build . -t pdflatex
+	DOCKER_BUILDKIT=1 docker build ./docker -t pdflatex
 
 .PHONY: cv
 cv: build-container
