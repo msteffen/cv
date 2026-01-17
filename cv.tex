@@ -59,6 +59,28 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
 
+%%%%%%%%%%%%%% SentiLink %%%%%%%%%%%%%%%%%%
+\begin{twocolentry}{
+    \textit{Remote}
+
+    \textit{March 2025 – Jan 2026}
+}
+    \textbf{SentiLink}
+
+    \textit{Staff Software Engineer}
+\end{twocolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Developed new dependency testing framework and worked with teams across the company to add dependency test coverage to all services.
+        \item Developed new technical strategy for protobuf API development to improve development velocity on microservices, and implemented tooling to support this strategy. I worked with teams across the company to adopt these tools and overall technical strategy for their services.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
 %%%%%%%%%%%%%% HPE %%%%%%%%%%%%%%%%%%
 \begin{twocolentry}{
     \textit{San Jose \& Remote}
@@ -75,45 +97,27 @@
 \begin{onecolentry}
     \begin{highlights}
         \item I was designated a Key Employee when HPE acquired Pachyderm in 2023.
-        \item Continued managing the Pachyderm Integrations Team through May 2024, shipping a complete rewrite of our Jupyter extension to meet the security requirements of HPE's customers.
-        \item Co-managed a team of seven engineers, after HPE re-organized Pachyderm into this single team in June 2024. To align the disparate teams being combined, I rewrote our engineering handbook, overhauled team processes, and worked with HPE IT to implement a common development environment. Overall efficiency improved, and we shipped several long-backlogged features.
+        \item Led Integrations team to deliver a complete rewrite of our Jupyter extension, to meet the security requirements of HPE's customers. Starting in June 2024, co-managed a team of seven engineers, after HPE re-organized Pachyderm into this single team.
     \end{highlights}
 \end{onecolentry}
 
 \vspace{0.2 cm}
 
 %%%%%%%%%%%%%% Pachyderm %%%%%%%%%%%%%%%%%%
+
 \begin{twocolentry}{
     \textit{San Francisco \& Remote}
-
-    \textit{Jan 2022 – Feb 2023}
 }
     \textbf{Pachyderm}
-
-    \textit{Software Engineering Manager}
 \end{twocolentry}
 
 \vspace{0.1 cm}
 
-\begin{comment}
 \begin{onecolentry}
-  %\begin{itemize}[
-  %      topsep=0.10 cm,
-  %      parsep=0.10 cm,
-  %      partopsep=0pt,
-  %      itemsep=0pt,
-  %      label={},
-  %      leftmargin=0.4 cm + 10pt
-  %]
-  %\textit{Pachyderm was a distributed filesystem with versioning, engineered for incremental batch data processing (e.g. ETL and ML preprocessing), and, eventually, AI training. We billed ourselves as ``Git for data''.}
-  \small
-  \textbf{Pachyderm is a distributed filesystem with versioning, designed to eliminate duplicate work in e.g. ETL and ML preprocessing pipelines and, eventually, AI training. We were ``Git for data'' or ``Bazel for data''.}
-  %\end{itemize}
+  \textit{Pachyderm was an integrated distributed filesystem, large-scale version control system, and pipeline orchestrator. By processing only changed data during each run, it cut the cost of of our customers' pipelines by 90\% or more.}
 \end{onecolentry}
-
 \vspace{0.1 cm}
 
-% NB. comment these out above if including this blurb
 \begin{twocolentry}{
     \textit{Jan 2022 – Feb 2023}
 }
@@ -121,13 +125,10 @@
 \end{twocolentry}
 
 \vspace{0.1 cm}
-
-\end{comment}
 
 \begin{onecolentry}
     \begin{highlights}
-        \item Hired for and supported the team through the design and development of our JupyterLab extension.
-        \item This extension, our biggest project, was a developer tool that allowed data scientists to explore and consume huge Pachyderm datasets directly in Jupyter's UI (which required deep modifications to Jupyter's frontend) and run Jupyter notebooks as sharded, orchestrated Pachyderm pipelines without modification.
+        \item Led development of our JupyterLab extension, which allowed data scientists to bring huge datasets into Jupyter and push Jupyter notebooks back into our pipeline orchestrator. Delivery required bringing end-to-end expertise into the team, including design, frontend and backend engineering, and ops.
         \item Contributed to design reviews and stayed in our on-call rotation throughout my tenure as manager.
     \end{highlights}
 \end{onecolentry}
@@ -144,9 +145,8 @@
 
 \begin{onecolentry}
     \begin{highlights}
-        \item Pachyderm is a distributed filesystem with versioning, for data and AI pipelines. When Pachyderm runs a pipeline, its pipeline orchestrator uses its versioning metadata to processes only new and updated shards. Results from unchanged shards are re-used, cutting the runtime and cost of pipelines by 90\% or more, in some cases. Sometimes described as ``Bazel for data''.
-        \item Implemented several major features, including an authorization system and a complete rewrite of our pipeline controller, among others (Go, Kubernetes).
-        \item Started new Integrations Team, to connect Pachyderm and other AI/ML products (Kubeflow, Seldon, LabelStudio, AzureML, Spark, and others). I acted as tech lead through its growth to five engineers.
+        \item Implemented our first authorization system, a complete rewrite of our pipeline controller, and other major improvements (Go, Kubernetes). Acted as sales engineer and support through delivery, as needed.
+        \item Started new Integrations Team, building connectors between Pachyderm and other AI/ML products (Kubeflow, Spark, and others). Acted as tech lead through its growth to five engineers.
     \end{highlights}
   \end{onecolentry}
 
@@ -164,11 +164,10 @@
 \end{twocolentry}
 
 \vspace{0.1 cm}
+
 \begin{onecolentry}
     \begin{highlights}
-        \item Independently maintained a legacy authorization service used by Google Docs, Photos, YouTube, Search, and other products through 2012 (Java).
-        \item Joined the \href{https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/}{Zanzibar} team in 2013 as the fourth engineer. I migrated users from the legacy service to Zanzibar and implemented features and performance improvements in Zanzibar itself (C++).
-        \item Contributed features and performance improvements to Cloud IAM in late 2015 and 2016.
+        \item Independently maintained a legacy authorization service used by Search, YouTube, Docs, and other products through 2012 (Java). Joined \href{https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/}{Zanzibar} in 2013 as the fourth engineer, migrating users from the legacy service and adding necessary features and improvements (C++). Contributed to Cloud IAM in late 2015 and 2016.
     \end{highlights}
 \end{onecolentry}
 
@@ -178,17 +177,14 @@
 \section{Education}
 
 \begin{twocolentry}{
-    \textit{Sept 2007 – May 2011}
+    \textit{Chicago, IL}
+
+    \textit{2007 – 2011}
 }
     \textbf{University of Chicago}
-\end{twocolentry}
 
-% This should be in the twocolentry above, but it doesn't all fit in
-% the left column. Using a onecolentry here makes the spacing correct
-% but keeps everything on one line
-\begin{onecolentry}
-    \textit{BS in Computer Science (also met requirements for BS in Mathematics) - 3.8 GPA}
-\end{onecolentry}
+    \textit{BS in Computer Science and Mathematics}
+\end{twocolentry}
 
 \vspace{0.1 cm}
 
